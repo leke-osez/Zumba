@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zumba - E-Commerce Web App
 
-## Getting Started
+## DESCRIPTION
+This is a full-stack web application built with NEXTJS, TailwindCSS and Sanity.<br>
+This App has two User Interfaces: <br>
+The __merchant__ interface- to manage the products and contents(blog) <br>
+The __customer__ interface- to order items and read blogs <br>
 
-First, run the development server:
+__Sanity__ is a powerful tool that provides:
+- Database management sytem.
+- Query system (GROQ; similar to GraphQL).
+- Management UI that is fully customizeable.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+__NextJS__ is a technology or framework built on ReactJs that provides:
+- Client and Server Side rendering
+- Static routing 
+- Highly maintainable code structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## FEATURES
+- Product and Content management system for Merchant.
+- User-Interface for Customer to order items and read blogs.
+- Category List to display items
+- Cart system to add items to be ordered.
+- Email system for order notification and contact system.
+- Server-side rendering and Image optimizations for quick load time.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## INSTALLATION GUIDE
+1. Go ahead and clone this repo to your local machine.
+2. Make sure you have node installed.
+3. On your command line type and run `npm install` to install all dependencies.
+4. This project uses some environment variables so create a __.env__ file
+5. When done creating your .env file, you environment variables would contain your Sanity configurations
+   Create a new project on Sanity, the instruction for that is out of the scope of this, but the instrucitons sanity gives in the doc is pretty easy.
+6. Now in your __.env__ file; ADD the following variables <br>
+   __SANITY_TOKEN__ is your sanity token <br>
+   __NEXT_PUBLIC_KEY__ is your paystack public key <br>
+7. now in the root folder RUN `npm run dev`
+8. Navigate to the __kww__ subfolder and RUN `sanity start` to whip up your local server for sanity
