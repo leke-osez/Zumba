@@ -1,4 +1,10 @@
 # Zumba - E-Commerce Web App
+<p align="center" style = "float:left">
+  <img src="public/home.png"  height="350" title="hover text">
+</p>
+
+## SEE DEMO VIA THIS LINK
+https://zumbah.vercel.app/
 
 ## DESCRIPTION
 This is a full-stack web application built with NEXTJS, TailwindCSS and Sanity.<br>
